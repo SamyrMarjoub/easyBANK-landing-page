@@ -94,6 +94,10 @@ main{
   display: flex;
   justify-content: flex-end;
 }
+.menu{
+    visibility: hidden;
+
+}
 .container-img img{
   width: 700px;
   margin-top: -90px;
@@ -367,6 +371,7 @@ background-color: #2d314e;
 .menu-mobile{
     display: none;
 }
+
 @media screen and (max-width:1220px) {
     .container-img img{
      width: 500px;
@@ -450,12 +455,13 @@ margin-left: 0%;
   .div-list li{
       margin-right: 10px;
   }
+  
 }
 @media screen and (max-width:850px) {
     .menu-mobile{
         display: block;
        position: absolute;
-       right:20px;
+     right: 50px;
        top: 20px;
     }
     .div-list{
@@ -469,6 +475,45 @@ margin-left: 0%;
     }
     .div-logo{
         margin-top: -40px;
+    }
+    .nonee{
+     visibility: hidden;
+     opacity: 0;  
+     
+
+    }
+    .flex{
+        visibility: visible;
+        opacity: 1;   
+    }
+    .menu{
+        width: 87%;
+        background-color: white;
+        height: 250px;
+        margin-left: 7%;
+        box-shadow: 0px 16px 100px hsl(233deg 26% 24%);
+        position: absolute;
+        top: 80px;
+     justify-content: center;
+    font-family: 'Public Sans', sans-serif;
+font-weight: 300;
+        transition: all 0.5s;
+   
+display: flex;
+
+    }
+    .menu ul{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .menu li{
+        list-style: none;
+        margin-top: 25px;
+        font-size: 19px;
+    }
+    .menu li:hover{
+        color: #30d35c;
     }
 }
 @media screen and (max-width:800px) {
@@ -485,7 +530,9 @@ margin-left: 0%;
 max-width: 450px;
 height: 600px;
 width: auto;
-     
+    }
+    .menu-mobile{
+        right: 30px;
     }
 }
 @media screen and (max-width:450px) {
